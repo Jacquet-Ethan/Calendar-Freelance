@@ -22,6 +22,15 @@ const BookingForm: React.FC<Props> = ({ formData, onChange, onSubmit }) => {
             <FormGroup label="Téléphone *">
                 <Input type="tel" name="phone" value={formData.phone} onChange={onChange} />
             </FormGroup>
+            <FormGroup label="Créneau horaire *">
+                <select name="timeSlot" value={formData.timeSlot} onChange={onChange} className="input">
+                    <option value="">Sélectionnez un créneau</option>
+                    <option value="09:00-10:00">09:00-10:00</option>
+                    <option value="10:00-11:00">10:00-11:00</option>
+                    <option value="14:00-15:00">14:00-15:00</option>
+                    <option value="15:00-16:00">15:00-16:00</option>
+                </select>
+            </FormGroup>
             <FormGroup label="Société (optionnel)">
                 <Input type="text" name="company" value={formData.company} onChange={onChange} />
             </FormGroup>

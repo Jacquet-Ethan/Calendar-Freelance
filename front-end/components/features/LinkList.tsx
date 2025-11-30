@@ -18,7 +18,6 @@ const LinkList: React.FC<Props> = ({ links = {} }) => {
         { icon: <Briefcase size={20} />, label: "Malt", url: links?.malt },
         { icon: <Briefcase size={20} />, label: "Portfolio", url: links?.portfolio }
     ];
-
     return (
         <Card className="links-card">
             <h2 className="section-title">Mes liens</h2>
